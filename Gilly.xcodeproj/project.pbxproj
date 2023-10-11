@@ -14,6 +14,15 @@
 		FCB668172AD407850091B59B /* GillyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB668162AD407850091B59B /* GillyTests.swift */; };
 		FCB668212AD407850091B59B /* GillyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB668202AD407850091B59B /* GillyUITests.swift */; };
 		FCB668232AD407850091B59B /* GillyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB668222AD407850091B59B /* GillyUITestsLaunchTests.swift */; };
+		FCB668302AD407C80091B59B /* FretboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6682F2AD407C70091B59B /* FretboardView.swift */; };
+		FCB668332AD4108E0091B59B /* CGPoint+Offset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB668322AD4108E0091B59B /* CGPoint+Offset.swift */; };
+		FCB668362AD418F80091B59B /* FretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB668352AD418F80091B59B /* FretPosition.swift */; };
+		FCB668382AD419070091B59B /* FretboardSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB668372AD419070091B59B /* FretboardSection.swift */; };
+		FCB6683A2AD4191C0091B59B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB668392AD4191C0091B59B /* Note.swift */; };
+		FCB6683C2AD419270091B59B /* Guitar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6683B2AD419270091B59B /* Guitar.swift */; };
+		FCB668402AD4196E0091B59B /* Array+FretboardSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB6683F2AD4196E0091B59B /* Array+FretboardSection.swift */; };
+		FCB668422AD422510091B59B /* Interval.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB668412AD422510091B59B /* Interval.swift */; };
+		FCB668442AD4228C0091B59B /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB668432AD4228B0091B59B /* Scale.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		FCB6681C2AD407850091B59B /* GillyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GillyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB668202AD407850091B59B /* GillyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GillyUITests.swift; sourceTree = "<group>"; };
 		FCB668222AD407850091B59B /* GillyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GillyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FCB6682F2AD407C70091B59B /* FretboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FretboardView.swift; sourceTree = "<group>"; };
+		FCB668322AD4108E0091B59B /* CGPoint+Offset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Offset.swift"; sourceTree = "<group>"; };
+		FCB668352AD418F80091B59B /* FretPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FretPosition.swift; sourceTree = "<group>"; };
+		FCB668372AD419070091B59B /* FretboardSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FretboardSection.swift; sourceTree = "<group>"; };
+		FCB668392AD4191C0091B59B /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		FCB6683B2AD419270091B59B /* Guitar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitar.swift; sourceTree = "<group>"; };
+		FCB6683F2AD4196E0091B59B /* Array+FretboardSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+FretboardSection.swift"; sourceTree = "<group>"; };
+		FCB668412AD422510091B59B /* Interval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interval.swift; sourceTree = "<group>"; };
+		FCB668432AD4228B0091B59B /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,9 @@
 			children = (
 				FCB668042AD407830091B59B /* GillyApp.swift */,
 				FCB668062AD407830091B59B /* ContentView.swift */,
+				FCB6682F2AD407C70091B59B /* FretboardView.swift */,
+				FCB668342AD418EF0091B59B /* Model */,
+				FCB668312AD410820091B59B /* Extensions */,
 				FCB668082AD407850091B59B /* Assets.xcassets */,
 				FCB6680A2AD407850091B59B /* Gilly.entitlements */,
 				FCB6680B2AD407850091B59B /* Preview Content */,
@@ -127,6 +148,28 @@
 				FCB668222AD407850091B59B /* GillyUITestsLaunchTests.swift */,
 			);
 			path = GillyUITests;
+			sourceTree = "<group>";
+		};
+		FCB668312AD410820091B59B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCB668322AD4108E0091B59B /* CGPoint+Offset.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCB668342AD418EF0091B59B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCB668352AD418F80091B59B /* FretPosition.swift */,
+				FCB668372AD419070091B59B /* FretboardSection.swift */,
+				FCB668392AD4191C0091B59B /* Note.swift */,
+				FCB6683B2AD419270091B59B /* Guitar.swift */,
+				FCB6683F2AD4196E0091B59B /* Array+FretboardSection.swift */,
+				FCB668412AD422510091B59B /* Interval.swift */,
+				FCB668432AD4228B0091B59B /* Scale.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +303,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB668072AD407830091B59B /* ContentView.swift in Sources */,
+				FCB668382AD419070091B59B /* FretboardSection.swift in Sources */,
+				FCB6683A2AD4191C0091B59B /* Note.swift in Sources */,
+				FCB668422AD422510091B59B /* Interval.swift in Sources */,
+				FCB6683C2AD419270091B59B /* Guitar.swift in Sources */,
+				FCB668362AD418F80091B59B /* FretPosition.swift in Sources */,
+				FCB668402AD4196E0091B59B /* Array+FretboardSection.swift in Sources */,
+				FCB668332AD4108E0091B59B /* CGPoint+Offset.swift in Sources */,
 				FCB668052AD407830091B59B /* GillyApp.swift in Sources */,
+				FCB668442AD4228C0091B59B /* Scale.swift in Sources */,
+				FCB668302AD407C80091B59B /* FretboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +471,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gill Gary";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -429,7 +482,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
@@ -457,6 +510,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gill Gary";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -467,7 +521,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
