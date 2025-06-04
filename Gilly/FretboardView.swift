@@ -18,7 +18,7 @@ struct FretboardView: View {
         VStack {
             FretNumberLabels(displayedFrets: displayedSection)
                 .padding(.horizontal, 10)
-                .fontWeight(.bold)
+                .font(.body.bold())
             ZStack {
                 FretsShape(displayedFrets: displayedSection)
                     .stroke(.red, style: .init(lineWidth: 5))

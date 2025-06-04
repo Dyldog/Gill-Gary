@@ -7,24 +7,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        VStack {
-            ScaleView()
-        }
-        .padding()
-    }
-}
-
 struct ScaleView: View {
-    @State var origin: Int = 2
-    @State var width: Int = 4
+    @State var origin: Int
+    @State var width: Int
+    let notes: [Note]
+    
+    init(notes: [Note], origin: Int, width: Int) {
+        self.notes = notes
+        self.origin = origin
+        self.width = width
+    }
     
     var body: some View {
         VStack {
             FretboardView(
-                positions: Scale.major.notes(startingFrom: .g, octaves: 3)
-                    .positions(in: .init(origin: origin, width: width))
+                positions: notes.positions(in: .init(origin: origin, width: width))
             )
             
             HStack {
@@ -69,11 +66,5 @@ struct ScaleView: View {
             }
             
         }
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
